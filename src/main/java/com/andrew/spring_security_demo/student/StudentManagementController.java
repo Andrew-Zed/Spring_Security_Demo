@@ -33,7 +33,7 @@ public class StudentManagementController {
 
     @DeleteMapping(path = "{studentId}")
     @PreAuthorize("hasAuthority('student:write')")
-    public void deleteStudent (@PathVariable("studentId") Integer studentId) {
+    public void deleteStudent(@PathVariable("studentId") Integer studentId) {
         System.out.println("deleteStudent");
         System.out.println(studentId);
     }

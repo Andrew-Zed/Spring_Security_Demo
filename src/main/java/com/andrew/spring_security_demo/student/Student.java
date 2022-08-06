@@ -1,10 +1,11 @@
 package com.andrew.spring_security_demo.student;
 
 public class Student {
-    private int studentId;
-    private String studentName;
+    private final Integer studentId;
+    private final String studentName;
 
-    public Student(int studentId, String studentName) {
+    public Student(int studentId,
+                   String studentName) {
         this.studentId = studentId;
         this.studentName = studentName;
     }
